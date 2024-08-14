@@ -1,0 +1,28 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/gabor/ros2_ws/install/point_cloud_filter/lib/python3.10/site-packages",
+        "/home/gabor/ros2_ws/install/arj_intro_py/lib/python3.10/site-packages",
+        "/home/gabor/ros2_ws/install/sensor_monitor_package/lib/python3.10/site-packages",
+        "/home/gabor/ros2_ws/install/py_pubsub/lib/python3.10/site-packages",
+        "/home/gabor/ros2_ws/build/my_robot_controller",
+        "/home/gabor/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages",
+        "/home/gabor/ros2_ws/install/haj_cv3_sorter/lib/python3.10/site-packages",
+        "/home/gabor/ros2_ws/install/array_sorter/lib/python3.10/site-packages",
+        "/home/gabor/ros2_ws/install/arj_transforms_py/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/gabor/ros2_ws/install/point_cloud_filter/lib/python3.10/site-packages",
+        "/home/gabor/ros2_ws/install/arj_intro_py/lib/python3.10/site-packages",
+        "/home/gabor/ros2_ws/install/sensor_monitor_package/lib/python3.10/site-packages",
+        "/home/gabor/ros2_ws/install/py_pubsub/lib/python3.10/site-packages",
+        "/home/gabor/ros2_ws/build/my_robot_controller",
+        "/home/gabor/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages",
+        "/home/gabor/ros2_ws/install/haj_cv3_sorter/lib/python3.10/site-packages",
+        "/home/gabor/ros2_ws/install/array_sorter/lib/python3.10/site-packages",
+        "/home/gabor/ros2_ws/install/arj_transforms_py/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}
