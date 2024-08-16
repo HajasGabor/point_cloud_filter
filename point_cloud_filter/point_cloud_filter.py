@@ -18,16 +18,18 @@ class PointCloudFilter(Node):
             10
         )
         
-        self.declare_parameter('z_threshold', 2.0)
+        self.declare_parameter('z_threshold_lower', 1.0)
+        self.declare_parameter('z_threshold_upper', 2.0)
 
 
     def point_cloud_callback(self, msg):
         filtered_points = []
 
-        z_threshold = self.get_parameter('z_threshold').get_parameter_value().double_value
+        z_threshold_lower = self.get_parameter('z_threshold_lower').get_parameter_value().double_value
+        z_threshold_upper = self.get_parameter('z_threshold_upper').get_parameter_value().double_value
         
         for point in pc2.read_points(msg, skip_nans=True):
-            if point[2] > z_threshold:
+            if point[2] > z_threshold_lower and point[2] < z_threshold_upper:
                 filtered_points.append(point)
 
         if filtered_points:
@@ -35,7 +37,7 @@ class PointCloudFilter(Node):
                 msg.header, msg.fields, filtered_points
             )
             self.publisher_.publish(filtered_msg)
-            self.get_logger().info(f'Point cloud over z = {z_threshold} published.')
+            self.get_logger().info(f'Point cloud over between z={z_threshold_lower} and z={z_threshold_upper} published.')
 
 
 def main(args=None):
