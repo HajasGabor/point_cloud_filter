@@ -37,7 +37,7 @@ class PointCloudFilter(Node):
                 msg.header, msg.fields, filtered_points
             )
             self.publisher_.publish(filtered_msg)
-            self.get_logger().info(f'Point cloud over between z={z_threshold_lower} and z={z_threshold_upper} published.')
+            self.get_logger().info(f'Point cloud between z={z_threshold_lower} and z={z_threshold_upper} published.')
 
 
 def main(args=None):
