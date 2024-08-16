@@ -18,7 +18,7 @@ class PointCloudFilter(Node):
             10
         )
         
-        self.declare_parameter('z_threshold', 1.0)
+        self.declare_parameter('z_threshold', 2.0)
 
 
     def point_cloud_callback(self, msg):
